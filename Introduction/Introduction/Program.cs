@@ -6,7 +6,7 @@ namespace Introduction
     {
         public static void Main(string[] args)
         {
-            Car car1, car2, car3;
+            Car car1, car2;
 
             //car1 = new Car("Red");
             //Console.WriteLine(car1.Describe());
