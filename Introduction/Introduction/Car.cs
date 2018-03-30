@@ -18,11 +18,13 @@ namespace Introduction
 
         public Car()
         {
+            Console.WriteLine("Default Constructor Called.");
             timeStamp = new TimeStamp();
         }
 
         public Car(string random) : this()
         {
+            Console.WriteLine("Random Constructor Called.");
             if (random != "random")
             {
                 Console.WriteLine("Illegal Constructor Argument.");
@@ -36,14 +38,9 @@ namespace Introduction
 
         public Car(string color, string type) : this()
         {
-            if (color == "r")
-                Randomize(this.acceptableColors);
-            else
-                ValidateColor(color);
-            if (type == "r")
-                Randomize(this.acceptableTypes);
-            else
-                ValidateType(color);
+            Console.WriteLine("2 Argument Constructor Called.");
+            ValidateColor(color);
+            ValidateType(type);
         }
 
         public string Display()
@@ -85,20 +82,20 @@ namespace Introduction
             
         }
 
-        private void ValidateColor(string color)
+        private void ValidateColor(string n_color)
         {
-            color = char.ToUpper(color[0]) + color.Substring(1);
-            if (this.acceptableColors.Contains(color))
-                this.color = color;
+            n_color = char.ToUpper(n_color[0]) + n_color.Substring(1);
+            if (this.acceptableColors.Contains(n_color))
+                this.color = n_color;
             else
                 Console.WriteLine("Illegal Color.");
         }
 
-        private void ValidateType(string carType)
+        private void ValidateType(string n_carType)
         {
-            carType = char.ToUpper(carType[0]) + carType.Substring(1);
-            if (this.acceptableTypes.Contains(carType))
-                this.carType = carType;
+            n_carType = char.ToUpper(n_carType[0]) + n_carType.Substring(1);
+            if (this.acceptableTypes.Contains(n_carType))
+                this.carType = n_carType;
             else
                 Console.WriteLine("Illegal Car Type.");
         }

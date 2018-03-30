@@ -20,8 +20,8 @@ namespace Introduction
 
             //car3 = new Car();
             //Console.WriteLine(car3.Describe());
-            car1 = new Car();
-            car2 = new Car("r", "r");
+            car1 = new Car("random");
+            car2 = new Car("Blue", "Sedan");
             Console.WriteLine(car1.Display());
             Console.WriteLine(car2.Display());
         }
