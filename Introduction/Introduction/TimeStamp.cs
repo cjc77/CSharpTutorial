@@ -6,7 +6,7 @@ namespace Introduction
     public class TimeStamp
     {
         private const int US = 0;
-        private DateTime dateAndTime;
+        private readonly DateTime dateAndTime;
         private readonly string[] locales = { "en-US", "en-GB",
             "fr-FR", "de-DE", "ru-RU"};
         

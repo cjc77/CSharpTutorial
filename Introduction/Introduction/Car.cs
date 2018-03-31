@@ -13,8 +13,8 @@ namespace Introduction
         private Random rand = new Random();
         private readonly string[] acceptableColors = {"Red", "Green", "Blue",
             "Silver", "Black"};
-        private readonly string[] acceptableTypes = {"Sedan", "SUV", "Sports Car",
-            "Van", "Mini-Van"};
+        private readonly string[] acceptableTypes = {"Sedan", "SUV",
+            "Sports Car", "Van", "Mini-Van"};
 
         public Car()
         {
@@ -43,31 +43,27 @@ namespace Introduction
             ValidateType(type);
         }
 
+        ~Car()
+        {
+            Console.WriteLine("Cleaning up, sir!");
+        }
+
+        public void Vroom()
+        {
+            Console.WriteLine("Vroom");
+        }
+
+        public void Vroom(int count)
+        {
+            for (int i = 0; i < count; i++)
+                Console.WriteLine("Vroom");
+        }
+
         public string Display()
         {
             string val = ("Color: " + Color + "\nCar Type: " + CarType +
                           "\nTime Stamp: " + this.timeStamp.DisplayUS());
             return val;
-        }
-
-        public string Color
-        {
-            get { return this.color; }
-
-            set
-            {
-                ValidateColor(value);
-            }
-        }
-
-        public string CarType
-        {
-            get { return this.carType; }
-
-            set
-            {
-                ValidateType(value);
-            }
         }
 
         private void Randomize(string [] attribute)
@@ -98,6 +94,26 @@ namespace Introduction
                 this.carType = n_carType;
             else
                 Console.WriteLine("Illegal Car Type.");
+        }
+
+        public string Color
+        {
+            get { return this.color; }
+
+            set
+            {
+                ValidateColor(value);
+            }
+        }
+
+        public string CarType
+        {
+            get { return this.carType; }
+
+            set
+            {
+                ValidateType(value);
+            }
         }
     }
 }
