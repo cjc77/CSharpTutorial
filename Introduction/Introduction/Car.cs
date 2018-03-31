@@ -1,25 +1,28 @@
 ﻿using System;
 using System.Linq;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace Introduction
 {
 
     public class Car
     {
-        private string color;
-        private string carType;
-        private TimeStamp timeStamp;
+        protected internal static int carsCreated;
+        protected string color;
+        protected string carType;
+        protected TimeStamp timeStamp;
         private Random rand = new Random();
         private readonly string[] acceptableColors = {"Red", "Green", "Blue",
             "Silver", "Black"};
         private readonly string[] acceptableTypes = {"Sedan", "SUV",
-            "Sports Car", "Van", "Mini-Van"};
+            "Sports Car", "Van", "Jeep"};
 
         public Car()
         {
             Console.WriteLine("Default Constructor Called.");
             timeStamp = new TimeStamp();
+            carsCreated += 1;
         }
 
         public Car(string random) : this()
@@ -46,6 +49,8 @@ namespace Introduction
         ~Car()
         {
             Console.WriteLine("Cleaning up, sir!");
+            carsCreated -= 1;
+            Console.WriteLine("Cars Remaining: " + carsCreated);
         }
 
         public void Vroom()
@@ -89,7 +94,8 @@ namespace Introduction
 
         private void ValidateType(string n_carType)
         {
-            n_carType = char.ToUpper(n_carType[0]) + n_carType.Substring(1);
+            TextInfo tInfo = new CultureInfo("en-US", false).TextInfo;
+            n_carType = tInfo.ToTitleCase(n_carType);
             if (this.acceptableTypes.Contains(n_carType))
                 this.carType = n_carType;
             else

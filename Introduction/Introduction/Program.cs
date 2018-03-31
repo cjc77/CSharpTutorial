@@ -6,29 +6,47 @@ namespace Introduction
     {
         public static void Main(string[] args)
         {
-            Car car1, car2;
+            string[] colors = { "blue", "green" };
+            string[] types = { "sedan", "sports car" };
+            const int mx = 3;
+            Car [] cars = new Car [mx];
+            for (int i = 0; i < mx; i++) {
+                if (i < mx - 1) {
+                    Console.WriteLine("1 Ran");
+                    MakeCar(out cars[i], colors[i], types[i]);
+                } else {
+                    Console.WriteLine("2 Ran");
+                    MakeCar(out cars[i], "random");
+                }
+            }
+            foreach (Car cr in cars)
+            {
+                Console.WriteLine("Car: ");
+                Console.WriteLine(cr.Display());
+            }
+        }
 
-            //car1 = new Car("Red");
-            //Console.WriteLine(car1.Describe());
-
-            //car2 = new Car("Green");
-            //Console.WriteLine(car2.Describe());
-            //car2.Color = ("silver");
-            //Console.WriteLine(car2.Describe());
-            //car2.Color = ("Purple");
-            //Console.WriteLine(car2.Describe());
-
-            //car3 = new Car();
-            //Console.WriteLine(car3.Describe());
-            car1 = new Car("random");
-            car2 = new Car("Blue", "Sedan");
-            //Console.WriteLine(car1.Display());
-            //Console.WriteLine(car2.Display());
-
-            Console.WriteLine("One Vroom...");
-            car1.Vroom();
-            Console.WriteLine("5 Vrooms...");
-            car1.Vroom(5);
+        public static void MakeCar(out Car car, params string [] args)
+        {
+            int argLen = args.Length;
+            Console.WriteLine(args.Length);
+            switch (argLen)
+            {
+                case 0:
+                    car = new Car();
+                    break;
+                case 1:
+                    car = new Car(args[0]);
+                    break;
+                case 2:
+                    car = new Car(args[0], args[1]);
+                    break;
+                default:
+                    Console.WriteLine("Improper use of constructor, " +
+                                     "initializing a random car.");
+                    car = new Car("random");
+                    break;
+            }
         }
     }
 }
