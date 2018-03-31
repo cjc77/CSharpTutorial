@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Diagnostics;
 using System.Globalization;
 
 namespace Introduction
@@ -8,7 +7,8 @@ namespace Introduction
 
     public class Car
     {
-        protected internal static int carsCreated;
+        // Project-wide count of how many cars (in total) have been created.
+        internal static int carsCreated;
         protected string color;
         protected string carType;
         protected TimeStamp manufactureDate;
@@ -43,9 +43,7 @@ namespace Introduction
         }
 
         ~Car()
-        {
-            //Console.WriteLine("Cleaning up, sir!");
-        }
+        {}
 
         public void Vroom()
         {
@@ -79,9 +77,6 @@ namespace Introduction
 
         private void ValidateColor(string n_color)
         {
-            //n_color = char.ToUpper(n_color[0]) + n_color.Substring(1);
-            //if (this.acceptableColors.Contains(n_color))
-            //this.color = n_color;
             TextInfo tInfo = new CultureInfo(Defs.locales[Defs.US], false).TextInfo;
             n_color = tInfo.ToTitleCase(n_color);
             if (Defs.acceptableColors.Contains(n_color))

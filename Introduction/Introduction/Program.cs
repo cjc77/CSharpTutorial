@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Introduction
+﻿namespace Introduction
 {
     class MainClass
     {

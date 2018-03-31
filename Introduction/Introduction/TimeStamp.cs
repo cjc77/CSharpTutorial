@@ -5,7 +5,7 @@ namespace Introduction
 {
     public class TimeStamp
     {
-        private readonly DateTime dateAndTime;
+        readonly DateTime dateAndTime;
 
         public TimeStamp()
         {
@@ -15,7 +15,7 @@ namespace Introduction
         public string DisplayUS()
         {
             var culture = new CultureInfo(Defs.locales[Defs.US]);
-            string returnVal = (Defs.locales[0] + " " 
+            string returnVal = (Defs.locales[Defs.US] + " " 
                                 + this.dateAndTime.ToString(culture));
             return returnVal;
         }

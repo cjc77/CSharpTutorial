@@ -5,7 +5,7 @@ namespace Introduction
 {
     public class Factory
     {
-        private LinkedList<Car> inventory;
+        LinkedList<Car> inventory;
 
         public Factory()
         {
