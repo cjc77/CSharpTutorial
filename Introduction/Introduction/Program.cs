@@ -10,6 +10,5 @@
             carFactory.OrderRandom();
             carFactory.DisplayInventory();
         }
-
     }
 }
