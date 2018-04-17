@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB4DA4EB-BD54-4814-99A9-3CE68AE388B3}</ProjectGuid>
+    <ProjectGuid>{38A9A1C6-3C0B-4B34-942B-4956819FD3F4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CapturedVariables</RootNamespace>
-    <AssemblyName>CapturedVariables</AssemblyName>
+    <RootNamespace>ThreadNaming</RootNamespace>
+    <AssemblyName>ThreadNaming</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CapturedVariables.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
