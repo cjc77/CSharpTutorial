@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Part2
 {
-    class Part2
+    class TempVariables
     {
         const int LOOPS = 5;
         const int RANGE = 10;

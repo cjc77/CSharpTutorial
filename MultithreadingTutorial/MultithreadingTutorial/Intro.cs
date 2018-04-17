@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace MultithreadingTutorial
 {
-    class Part1
+    class Intro
     {
         static int loops = 1000;
         static void Main(string[] args)

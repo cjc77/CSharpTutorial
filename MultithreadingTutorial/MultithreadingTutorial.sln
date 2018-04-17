@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part1", "MultithreadingTutorial\Part1.csproj", "{1204A9CD-37B4-4555-AD16-4AC618E71B20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro", "MultithreadingTutorial\Intro.csproj", "{1204A9CD-37B4-4555-AD16-4AC618E71B20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part2", "Part2\Part2.csproj", "{B441FFBF-C538-4B0A-A35E-24215B69CB39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempVariables", "Part2\TempVariables.csproj", "{B441FFBF-C538-4B0A-A35E-24215B69CB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonInstance", "Part3\CommonInstance.csproj", "{B9D191F8-C77A-497F-8A1B-F3AB31D80662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceCondition", "Part4\RaceCondition.csproj", "{E3906748-70A0-4EF0-9D8C-963CEF6C71E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locking", "Part5\Locking.csproj", "{AD3222A3-C389-4328-AF52-6E00799361DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{B441FFBF-C538-4B0A-A35E-24215B69CB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B441FFBF-C538-4B0A-A35E-24215B69CB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B441FFBF-C538-4B0A-A35E-24215B69CB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D191F8-C77A-497F-8A1B-F3AB31D80662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D191F8-C77A-497F-8A1B-F3AB31D80662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D191F8-C77A-497F-8A1B-F3AB31D80662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D191F8-C77A-497F-8A1B-F3AB31D80662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3906748-70A0-4EF0-9D8C-963CEF6C71E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3906748-70A0-4EF0-9D8C-963CEF6C71E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3906748-70A0-4EF0-9D8C-963CEF6C71E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3906748-70A0-4EF0-9D8C-963CEF6C71E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3222A3-C389-4328-AF52-6E00799361DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3222A3-C389-4328-AF52-6E00799361DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3222A3-C389-4328-AF52-6E00799361DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3222A3-C389-4328-AF52-6E00799361DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

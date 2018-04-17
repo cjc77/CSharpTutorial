@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1204A9CD-37B4-4555-AD16-4AC618E71B20}</ProjectGuid>
+    <ProjectGuid>{B441FFBF-C538-4B0A-A35E-24215B69CB39}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MultithreadingTutorial</RootNamespace>
-    <AssemblyName>MultithreadingTutorial</AssemblyName>
+    <RootNamespace>Part2</RootNamespace>
+    <AssemblyName>Part2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Part1.cs" />
+    <Compile Include="TempVariables.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
