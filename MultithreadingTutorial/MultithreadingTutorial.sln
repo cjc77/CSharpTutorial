@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceCondition", "Part4\Race
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locking", "Part5\Locking.csproj", "{AD3222A3-C389-4328-AF52-6E00799361DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaThreading", "Lambda\LambdaThreading.csproj", "{681A7D35-9A57-4179-8680-E8728C157010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadFactorial", "ThreadFactorial\ThreadFactorial.csproj", "{8053338D-AE37-4B1F-B78C-1FB6D034B112}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{AD3222A3-C389-4328-AF52-6E00799361DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD3222A3-C389-4328-AF52-6E00799361DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD3222A3-C389-4328-AF52-6E00799361DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681A7D35-9A57-4179-8680-E8728C157010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681A7D35-9A57-4179-8680-E8728C157010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681A7D35-9A57-4179-8680-E8728C157010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681A7D35-9A57-4179-8680-E8728C157010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8053338D-AE37-4B1F-B78C-1FB6D034B112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8053338D-AE37-4B1F-B78C-1FB6D034B112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8053338D-AE37-4B1F-B78C-1FB6D034B112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8053338D-AE37-4B1F-B78C-1FB6D034B112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
