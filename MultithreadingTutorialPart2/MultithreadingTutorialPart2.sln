@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreForLock", "Semapho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafeListManipulation", "ThreadSafeListManipulation\ThreadSafeListManipulation.csproj", "{0567F966-310F-4B7E-B9DC-33B298E25641}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreadedTextBox", "MultiThreadedTextBox\MultiThreadedTextBox.csproj", "{2C9A00CC-8A35-4EC3-A70C-795B3DF39D4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{0567F966-310F-4B7E-B9DC-33B298E25641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0567F966-310F-4B7E-B9DC-33B298E25641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0567F966-310F-4B7E-B9DC-33B298E25641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C9A00CC-8A35-4EC3-A70C-795B3DF39D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C9A00CC-8A35-4EC3-A70C-795B3DF39D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C9A00CC-8A35-4EC3-A70C-795B3DF39D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C9A00CC-8A35-4EC3-A70C-795B3DF39D4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
